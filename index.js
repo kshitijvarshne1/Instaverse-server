@@ -17,7 +17,7 @@ app.use(cors());
 
 app.use("/post", postRoutes);
 app.use("/user", userRoutes);
-app.get("/", (res, req) => {
+app.get("/", (req, res) => {
   res.send("Welcome to Instaverse API");
 });
 
